@@ -1,1 +1,1 @@
-# Raihan-Albani
+Latihan SQL PostgreSQL menggunakan pgAdmin
