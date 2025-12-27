@@ -33,17 +33,19 @@ CREATE TABLE raihandb.ipk (
 	ipk FLOAT
 );
 
-INSERT INTO raihandb.mahasiswa VALUES
-	(00980, 'Raihan', 'Albani', 'FST', 'Sistem Informasi');
-INSERT INTO raihandb.mahasiswa (nim, nama_depan, nama_belakang, fakultas, prodi)
-	VALUES (00981, 'Anya', 'Geraldine', 'FEB', 'Sekolah Bisnis');
-INSERT INTO raihandb.mahasiswa (nim, nama_depan, nama_belakang, fakultas, prodi)
-	VALUES (00982, 'Mario', 'Teguh', 'FH', 'Hukum');
-INSERT INTO raihandb.mahasiswa (nim, nama_depan, fakultas, prodi)
-	VALUES (00983, 'Sutrisno', 'FK', 'Kedokteran');
-INSERT INTO raihandb.mahasiswa (fakultas, nama_depan, nim, nama_belakang, prodi)
-	VALUES ('FISIP', 'Maudy', 00984, 'Ayunda', 'Ilmu Pemerintahan');
-INSERT INTO raihandb.mahasiswa VALUES
-	(00985, 'Ajeng', 'Cantika', 'FT', 'Teknik Komputer');
+INSERT INTO tabeldb.mahasiswa (nim, nama_depan, nama_belakang, fakultas, prodi)
+VALUES (100190, 'Chicko', 'JellyDrink', 'FEB', 'Manajemen');
+
+INSERT INTO tabeldb.mahasiswa (nim, nama_depan, nama_belakang, fakultas, prodi)
+VALUES (100191, 'Sandra', 'Dedi', 'FMIPA', 'Matematika');
+
+INSERT INTO tabeldb.mahasiswa
+VALUES (100192, 'Raffih', 'Amat', 'FISIP', 'Ilmu Pemerintahan');
+
+INSERT INTO tabeldb.mahasiswa (fakultas, nama_depan, prodi, nim, nama_belakang)
+VALUES ('FT', 'Ayu', 'Teknik Perikanan', 100193, 'Tong-Tong');
+
+INSERT INTO tabeldb.mahasiswa (nim, nama_depan, fakultas, prodi)
+VALUES (100194, 'Robinson', 'FK', 'Kedokteran Hewan');
 
 SELECT nim, nama_depan, nama_belakang, fakultas, prodi FROM raihandb.mahasiswa;
