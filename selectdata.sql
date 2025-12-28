@@ -1,3 +1,20 @@
+-- DQL: Data Query Language
+SELECT * FROM tabeldb.nilaimaba;
+
+/*
+Kondisi/Condition
+-- keyword: WHERE
+
+Contoh operasi pengkondisian
+=
+!=
+<
+>
+<=
+>=
+
+*/
+
 -- tabel 1 daftar mahasiswa
 CREATE TABLE tabeldb.daftarmaba (
 	nim INTEGER PRIMARY KEY,
@@ -52,3 +69,4 @@ SELECT * FROM tabeldb.daftarmaba WHERE umur > 20;
 
 -- Menampilakan mahasiswa dengan angkatan IS NULL
 SELECT * FROM tabeldb.daftarmaba WHERE angkatan IS NULL;
+
