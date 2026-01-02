@@ -1,5 +1,16 @@
 -- Latihan LEVEL INTERMEDIATE SQL
+-- Urutan Emas
 
+/*SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+*/
+
+  
 --1 Hitung jumlah film untuk setiap rating.
 SELECT rating, COUNT(*) AS total_film
 FROM film
@@ -34,3 +45,4 @@ WHERE length > 100 AND rental_rate != 0.99
 GROUP BY rating
 ORDER BY total_film DESC
 LIMIT 3;
+
